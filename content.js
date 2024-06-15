@@ -1,4 +1,4 @@
-const termsToHighlight = ["example", "test", "highlight"]; // Add your list of terms here
+const termsToHighlight = ["0000913", "test", "highlight"]; // Add your list of terms here
 
 function highlightTerms(terms) {
   function escapeRegExp(string) {

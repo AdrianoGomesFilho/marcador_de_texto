@@ -11,6 +11,12 @@ A definir
 # COMO PODEREI USÁ-LO?
 A definir
 
+# IMPLEMENTOS
+Não editar campos editáveis (quando cola, o programa substitui o termo)
+Funcionar no e-mail (gmail)
+Lista de palavras importada
+Sincronizar lista de palavras
+
 # SOBRE O DEV
 Para cada problema tento achar uma solução. Procuro sempre aprender pela internet (YouTube, ChatGpt, sites). Codando e testando!
 Atualmente atuo como advogado na @sgaadv e implemento meus projetos lá
