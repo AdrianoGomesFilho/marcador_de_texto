@@ -1,5 +1,5 @@
 # OBJETIVO DO PROJETO
-Destacar por cores processos específicos no navegador. Cada cor é um advogado/usuário responsável.
+Destacar por cores textos/números e dividir por cores específicas no navegador. Principal uso: cada cor é um advogado/usuário responsável de uma intimação.
 
 # O QUE ELE FAZ?
 
