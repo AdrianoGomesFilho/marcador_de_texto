@@ -1,5 +1,7 @@
 const termsToHighlight = ["0000913", "test", "highlight"]; // Add your list of terms here
 
+// 2🔶
+
 function highlightTerms(terms) {
   function escapeRegExp(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Escape special characters for regex
@@ -11,7 +13,7 @@ function highlightTerms(terms) {
     span.textContent = text;
     return span;
   }
-
+  // 5🔶
   function highlightNode(node) {
     const text = node.nodeValue;
     const parentNode = node.parentNode;
@@ -37,16 +39,22 @@ function highlightTerms(terms) {
     }
   }
 
+  // 3🔶
+
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
   const textNodes = [];
   while (walker.nextNode()) {
     textNodes.push(walker.currentNode);
   }
-
+// 4🔶
   textNodes.forEach(highlightNode);
 }
 
+//1🔶
+
 highlightTerms(termsToHighlight);
+
+//6🔶
 
 const style = document.createElement('style');
 style.innerHTML = `

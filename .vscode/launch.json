@@ -1,15 +1,17 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome with extension",
+        "url": "https://www.google.com/search?q=test&sca_esv=1503581cdfc54ca7&sca_upv=1&sxsrf=ADLYWIIOm-iakixmdjl9oHD9scW7pw8AMg%3A1718839692130&ei=jGlzZrbQB9P25OUP9aCckAk&ved=0ahUKEwi2xpnq6OiGAxVTO7kGHXUQB5IQ4dUDCBA&uact=5&oq=test&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHRlc3QyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIQEC4YgAQY0QMYQxjHARiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgARIvQ5QAFjYDXAAeACQAQCYAb0CoAGTB6oBBzAuMi4xLjG4AQPIAQD4AQGYAgSgAqkHwgIHEAAYgAQYDcICBhAAGBYYHsICCBAAGIAEGKIEwgIREC4YgAQYkQIY0QMYxwEYigXCAgsQLhiABBjRAxjHAcICChAuGIAEGEMYigWYAwCSBwcwLjIuMS4xoAf5Hw&sclient=gws-wiz-serp", 
+        "webRoot": "${workspaceFolder}",
+        "runtimeArgs": [
+          "--load-extension=${workspaceFolder}/",
+          "--remote-debugging-port=9222"
+        ]
+      }
     ]
-}
+  }
+  
