@@ -30,11 +30,35 @@ function highlightTerms(terms) {
         const fragment = document.createDocumentFragment(); //permite criar um conteiner fora da arvore DOM, que pode ser usada sem forçar uma nova renderização da página
 
         fragments.forEach((fragmentText) => {
-            if (terms.some(term))
+            if (terms.some(term => term.toLowerCase() === fragmentText.toLowerCase()))
+                //o metodo some busca se há ao menos um elemento no array que satisfaça a condição (do lowercase)
+                {
+                matchFound = true;
+                fragment.appendChild(createHighlightSpan(fragmentText)); //se der match, adiciona a classe de highlight
+            } else {
+                fragment.appendChild(document.createTextNode(fragmentText));  //senao,retorna um plain text
+            }
+        });
+
+        function createHighlightSpan(text) { //aqui ele cria um span, com o texto a ser marcado, com uma classe especifica que será marcada
+            const span = document.createElement('span');
+            span.className = 'highlight';
+            span.textContent = text;
+            return span;
         }
-    )
 
+        if (matchFound) {
+            parentNode.replaceChild(fragment, node)
+        }
     }
-
-   
 }
+
+const style = document.createElement('style');
+style.innerHTML= `
+    .highlight {
+        background-color:yellow;
+        color:black;
+    }
+`;
+document.head.appendChild(style);
+
