@@ -3,14 +3,15 @@
     "name": "Marcador de texto",
     "version": "1.0",
     "description": "Destaca certas palavras de uma lista",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["tabs", "activeTab", "scripting"],
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["content.js"]
+        "js": ["contentOriginal.js"],
+        "run_at": "document_end"
       }
     ],
     "action": {

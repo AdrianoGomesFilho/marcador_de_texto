@@ -5,7 +5,7 @@
         "type": "chrome",
         "request": "launch",
         "name": "Launch Chrome with extension",
-        "url": "https://www.google.com/search?q=test&sca_esv=1503581cdfc54ca7&sca_upv=1&sxsrf=ADLYWIIOm-iakixmdjl9oHD9scW7pw8AMg%3A1718839692130&ei=jGlzZrbQB9P25OUP9aCckAk&ved=0ahUKEwi2xpnq6OiGAxVTO7kGHXUQB5IQ4dUDCBA&uact=5&oq=test&gs_lp=Egxnd3Mtd2l6LXNlcnAiBHRlc3QyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIQEC4YgAQY0QMYQxjHARiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgARIvQ5QAFjYDXAAeACQAQCYAb0CoAGTB6oBBzAuMi4xLjG4AQPIAQD4AQGYAgSgAqkHwgIHEAAYgAQYDcICBhAAGBYYHsICCBAAGIAEGKIEwgIREC4YgAQYkQIY0QMYxwEYigXCAgsQLhiABBjRAxjHAcICChAuGIAEGEMYigWYAwCSBwcwLjIuMS4xoAf5Hw&sclient=gws-wiz-serp", 
+        "url": "https://mail.google.com/mail/u/0/", 
         "webRoot": "${workspaceFolder}",
         "runtimeArgs": [
           "--load-extension=${workspaceFolder}/",
