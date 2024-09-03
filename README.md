@@ -1,30 +1,27 @@
-# OBJETIVO DO PROJETO
-Extensão compatível com o Chrome que destaca por cores textos/números na página web. Extensão semelhante: "Highlight This" do Wim Deboel
+# Project Objective
+Develop a Chrome-compatible extension that highlights text/numbers on web pages with different colors. A similar existing extension is "Highlight This" by Wim Deboel.
 
-# O QUE ELE FAZ?
+## Functionality
+- **Purpose**: The extension will highlight process numbers in emails/webpages. For instance, if a process number is highlighted in green, it indicates it's yours; if in another user's color, you can ignore or forward it.
+- **Current Issue**: Highlighting words in Gmail is challenging due to security barriers with iframes that prevent DOM modifications. The "Highlight This" extension by Wim Deboel is currently the best tool for this purpose.
 
-A ideia é usá-la assim: recebo intimações via e-mail, se o processo for destacado na minha cor (ex: verde) eu sei que aquele processo é meu. Se for na cor de outro usuário, eu posso ignorar ou encaminhar ao outro usuário.
+## Technology Used
+- **Language**: JavaScript - DOM element modification.
 
-Entretanto no atual estado há uma dificuldade em marcar as palavras do g-mail por existir uma barreira de segurança via iframes, que impede a modificação do DOM. A melhor ferramenta por enquanto é o "Highlight This" do Wim Deboel
+## Usage Instructions
+1. Download and install the project directly in the Chrome browser.
+2. Navigate to `chrome://extensions/`.
+3. Enable Developer Mode.
+4. Click and drag the project folder into Chrome.
 
-# LINGUAGEM USADA
-Javascript - modificação de elementos DOM da página.
+## Current Status
+The project is currently on hold due to difficulties handling Gmail iframes.
 
-# COMO PODEREI USÁ-LO?
-O projeto pode ser baixado e instalado diretamente no navegador Chrome. A lista de palavras está no contentOriginal e possui 3 palavras para testes.
+### Issues to Address
+- Prevent editing in editable fields (e.g., when pasting, the program replaces the term).
+- Make it work within Gmail's iframe and Astrea (discover limitations).
+- Import and sync the word list.
 
-1 - abra o chrome://extensions/
-2 - ative o modo desenvolvedor
-3 - clique e arraste a pasta com os arquivos deste repositório direto no Chrome
-
-# IMPLEMENTOS
-Atualmente o projeto está pausado tendo em vista a dificuldade de lidar com os iframes do Gmail.
-
-Não editar campos editáveis (quando cola, o programa substitui o termo)
-Funcionar no e-mail (iframe do gmail) e Astrea (descobrir limitação)
-Lista de palavras importada
-Sincronizar lista de palavras
-
-# SOBRE O DEV
-Para cada problema tento achar uma solução. Procuro sempre aprender pela internet (YouTube, ChatGpt, sites). Codando e testando!
-Atualmente atuo como advogado na @sgaadv e implemento meus projetos lá
+# About the Developer
+- Problem-solving: I aim to find a solution for every problem, constantly learning through online resources like YouTube, ChatGPT, and various websites. Coding and testing are my primary methods.
+- Current Role: I work as a lawyer at @sgaadv and implement my projects there.
